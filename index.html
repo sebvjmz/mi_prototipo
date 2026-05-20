@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reporte de Incidencias Ciudadanas</title>
+<style>
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  padding: 20px;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+button {
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.status {
+  margin-top: 20px;
+  padding: 10px;
+  background: #e9ecef;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Reporte de Incidencias Ciudadanas</h1>
+<p>Reporta problemas urbanos y haz seguimiento con retroalimentación.</p>
+
+<h3>Reportar problema</h3>
+<textarea id="problema" placeholder="Describe el problema"></textarea><br><br>
+<button onclick="enviar()">Enviar reporte</button>
+
+<div class="status" id="estado"></div>
+</div>
+
+<script>
+function enviar() {
+  document.getElementById("estado").innerHTML = 
+    "✅ Reporte recibido...<br>🔄 En proceso...<br>✔ Resuelto";
+}
+</script>
+
+</body>
+</html>
